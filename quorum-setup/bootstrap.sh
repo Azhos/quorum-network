@@ -1,13 +1,6 @@
 #!/bin/bash
 set -eu -o pipefail
 
-# set locales before update && upgrade
-#sudo -i
-#locale
-#export LANGUAGE=en_US.UTF-8; export LANG=en_US.UTF-8; export LC_ALL=en_US.UTF-8; locale-gen en_US.UTF-8
-#dpkg-reconfigure locales
-#reboot
-
 # update system (with bypass apt prompt and grub conf override question)
 sudo DEBIAN_FRONTEND=noninteractive apt-get update && sudo apt-get -y upgrade
 
@@ -32,7 +25,6 @@ tar xfz $GOREL
 mv go /usr/local/go
 rm -f $GOREL
 PATH=$PATH:/usr/local/go/bin
-#echo 'PATH=$PATH:/usr/local/go/bin' >> /home/vagrant/.bashrc
 echo 'PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 
 # make/install quorum
