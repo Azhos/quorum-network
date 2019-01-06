@@ -49,7 +49,13 @@ Then go on with step **(3)**.
 
 **Copy the address of each required Ethereum account into the genesis.json**: 
 
-The addresses values can be found within the files in keystore folder `raft/keystore/<file>`. It is the first key-value-pair, which is relevant `"address":"<example_address_value>"`. Add it (prefixed with a `0x`) to the `alloc` section of the `genesis.json`. 
+The addresses values can be found within the files in keystore folder `raft/keystore/<file>`. You can output the content of the files as follows:
+
+```shell
+sudo cat raft/keystore/$(sudo ls raft/keystore/) 
+```
+
+The first key-value-pair is relevant `"address":"<example_address_value>"`. Add it (prefixed with a `0x`) to the `alloc` section of the `genesis.json`. 
 
 Example:
 
