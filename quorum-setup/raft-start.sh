@@ -9,7 +9,7 @@ nohup constellation-node tm.conf 2>> qdata/logs/constellation.log &
 sleep 10
 
 echo "[*] Starting node"
-PRIVATE_CONFIG=tm.conf nohup geth --datadir qdata $GLOBAL_ARGS --raftport 23000 --rpcport 22000 --port 21000 2>>qdata/logs/1.log &
+PRIVATE_CONFIG=tm.conf nohup geth --datadir qdata --permissioned $GLOBAL_ARGS --raftport 23000 --rpcport 22000 --port 21000 2>>qdata/logs/1.log &
 
 echo "[*] Waiting for nodes to start"
 sleep 10
