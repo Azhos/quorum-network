@@ -76,7 +76,7 @@ The enodes can be found here `raft/own_enode.json`. Add the `enodes` of each ser
 
 Example:
 
-```
+```json
 [
 "enode://c3288dcc8e72a616848bb8444e3c9b2e17abb162b427155bef07843da9d54dab39eecc7ba9c8d0d0f17aa5cf8cf28a222aef4d63c1f479e17a7370748f12f139@server_ip:21000?discport=0&raftport=23000",
 
