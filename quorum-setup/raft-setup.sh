@@ -20,6 +20,6 @@ geth --datadir raft --password passwords.txt account new
 
 echo "[*] Generating constellation key pair"
 cd raft
-echo $CONSTELLATION_KEY_PASSWORD | constellation-node --generatekeys=constellation
+echo $CONSTELLATION_KEY_PASSWORD | constellation-node --generatekeys=tm
 
 echo "[*] Done"
