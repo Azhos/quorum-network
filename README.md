@@ -64,7 +64,8 @@ Example:
     },
     "0xb114c9be6127413b6cedbc244d1823e05060d5dc": {
         "balance": "1000000000000000000000000000"    
-    }
+    },
+    //...
 }
 ```
 
@@ -79,10 +80,8 @@ Example:
 ```json
 [
 "enode://c3288dcc8e72a616848bb8444e3c9b2e17abb162b427155bef07843da9d54dab39eecc7ba9c8d0d0f17aa5cf8cf28a222aef4d63c1f479e17a7370748f12f139@server_ip:21000?discport=0&raftport=23000",
-
 "enode://38195ae586c63126cd8e0a085a118f8398d9f898a8bece3a4059d7d0ca03580e00c33a4a0d0bf0c8b82e30b82af4a58d5f182688280d6e942e8415e106f81e57@server_ip:21000?discport=0&raftport=23000",
-
-...
+//...
 ]
 ```
 
